@@ -1,0 +1,68 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  
+.dadosPrincipais {
+background-color: rgb(255, 166, 24);
+padding: 2.0rem;
+}
+
+.infCentro{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ladoEsquerdo{
+  background-color: #0d6efd;
+  padding: 3rem;
+  width: 50%;
+}
+
+.ladoDireito{
+  background-color: #17a2b8;
+  padding: 3rem;
+  width: 50%;
+}
+
+.obitos{
+  color: cornsilk;
+  font-size: 1.4rem;
+  padding-bottom: 0.2rem;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  }
+
+.casos{
+  color: cornsilk;
+  font-size: 1.4rem;
+  padding-bottom: 0.2rem;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+
+table {
+  margin-top: 0.8rem;
+  font-family: arial, sans-serif;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+  color: #fff;
+  border: 1px solid #d3d3d3;
+  padding: 8px;
+}
+
+.rodape{
+  background-color: indigo;
+  padding: 0.1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.barra{
+  font-size: 1.5rem;
+}

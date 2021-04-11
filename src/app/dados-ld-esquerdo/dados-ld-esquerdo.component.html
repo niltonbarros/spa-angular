@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Casos</title>
+</head>
+<body>
+    <div class="casos">
+        <p>CASOS</p>
+        <button mat-flat-button color="primary" (click)="exibirInf()">Informação Adicional</button>
+    </div>
+    <div class="containerLDpri">
+        <div class="obtNovo">
+            <p>Novos Casos</p>
+            <div class="obtNovoInf"><p>{{casoNovo}}</p></div>
+        </div>
+        <div class="obtAcum">
+            <p>Casos Acumulados</p>
+            <div class="obtAcumInf"><p>{{casoAcum}}</p></div>
+        </div>
+    </div>
+    <div class="infAdc" *ngIf="exibeInf">*Alguns casos estão sendo tratados em cidades da região</div>
+</body>
+</html>

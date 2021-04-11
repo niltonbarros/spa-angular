@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SPA com Angular</title>
+   </head>
+
+  <body>
+    <!--Cabeçalho com componente angular Material | Toolbar e Card-->
+    <div>
+      <p>
+        <mat-toolbar color="primary">
+          <span>BOLETIM EPIDEMIOLÓGICO | COVID-19</span> 
+        </mat-toolbar>
+        <mat-card class="barra">
+          <p><b>Mairinque - SP</b></p>
+          <p>Dados até: 11/04/2021</p>
+        </mat-card>
+      </p>    
+    </div>
+    <!--Cabeçalho com componente angular Material | Toolbar e Card-->
+
+    <!--Container com dados importados de outros componentes-->
+    <div class="dadosPrincipais">
+      <spa-dados-principais></spa-dados-principais>
+    </div>
+
+    <div class="infCentro">
+        <div class="ladoEsquerdo">        
+          <spa-dados-ld-esquerdo></spa-dados-ld-esquerdo>
+        </div>
+        <div class="ladoDireito">
+           <spa-dados-ld-direito></spa-dados-ld-direito>
+        </div>
+    </div>
+    <!--Container com dados importados de outros componentes-->
+
+
+    <!--Container com diretiva ngFor-->
+    <div class="infCentro">
+      <div class="ladoDireito">
+        <div class="casos">
+          <p>CASOS POR REGIÃO</p>          
+        </div>
+        <table>   
+          <tr>
+            <th>Zona Norte</th>
+            <th>Zona Sul</th>
+            <th>Zona Leste</th>
+            <th>Zona Oeste</th>
+            <th>Centro</th>
+          </tr>   
+          <tr *ngFor="let regioes of listaregioes">
+            <td>{{regioes.znorte}}</td>
+            <td>{{regioes.zsul}}</td>
+            <td>{{regioes.zleste}}</td>
+            <td>{{regioes.zoeste}}</td>
+            <td>{{regioes.centro}}</td>
+          </tr>
+      </table>
+      </div>
+      <!--Container com diretiva ngFor-->
+
+      <!--Container com interpolação pegando os dados de detalhamento da lista de óbitos-->
+      <div class="ladoEsquerdo">  
+          <div class="obitos">
+            <p>DETALHAMENTO DOS ÓBITOS</p>
+          </div>
+          <table>      
+              <tr *ngFor="let ddsobitos of listaObitos">
+                <td>{{ddsobitos.genero}}</td>
+                <td>{{ddsobitos.percentual}}</td>
+                <td>{{ddsobitos.obs}}</td>
+              </tr>
+          </table>
+      </div>
+      <!--Container com interpolação pegando os dados de detalhamento da lista de óbitos-->
+  </div>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+      <div>
+          <p>Boletim Epidemiológico COVID-19 | Mairinque - SP | 2021</p>
+      </div>
+    </footer>
+    <!--Rodapé-->
+
+  </body>
+</html>

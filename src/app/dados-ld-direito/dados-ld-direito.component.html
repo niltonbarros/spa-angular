@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Obitos</title>
+</head>
+<body>
+    <div class="obitos">
+        <p>ÓBITOS</p>
+        <button mat-flat-button color="primary" (click)="exibirInf()">Informação Adicional</button>
+    </div>
+    <div class="containerLDpri">
+
+        <div class="obtNovo">
+            <p>Óbitos Novos</p>
+            <div class="obtNovoInf"><p>{{obtNovo}}</p></div>
+        </div>
+        <div class="obtAcum">
+            <p>Óbitos Acumulados</p>
+            <div class="obtAcumInf"><p>{{obtAcum}}</p></div>
+        </div>
+    </div>
+    <div class="infAdc" *ngIf="exibeInf">*Alguns óbitos ocorreram em outros hospitais</div>
+</body>
+</html>

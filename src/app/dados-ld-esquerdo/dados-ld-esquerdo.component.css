@@ -1,0 +1,47 @@
+
+.containerLDpri{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  
+  .casos{
+    display: flex;
+    justify-content: space-between;
+    color: cornsilk;
+    font-size: 2.4rem;
+    padding-bottom: 0.2rem;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    }
+
+     
+.obtNovo{
+    border: 0;
+    margin-top: 0.8rem;
+    color: cornsilk;
+    font-size: 1.2rem;
+    width: 50%;
+    }
+
+.obtNovoInf{
+    font-size: 2rem;
+}
+
+.obtAcum{
+    margin-top: 0.8rem;
+    color: cornsilk;
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.obtAcumInf{
+    font-size: 2rem;
+}
+
+.infAdc{
+    color: cornsilk;
+    font-size: 0.9rem;
+    width: 50%;
+}
