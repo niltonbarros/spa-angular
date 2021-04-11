@@ -1,5 +1,10 @@
 # Projetospa
 
+O objetivo deste projeto é a criação de uma aplicação Web com uso do Angular.
+Foi criado um Painel de Boletim Epidemiológico, onde temos um componente principal que é a home e outros 4 componentes interagindo entre si, foi utilizado Interpolação, Property Binding, diretiva ngFor e ainda Event Emitter.
+Foram aplicados componente do Angular Material com design para aplicação ter um layout agradável.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
 ## Development server
